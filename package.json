@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "rm -rf build && cd puhelinluettelo_frontend/ && npm install && npm run build && cp -r build ../",
     "deploy": "npm run build && npm start",
     "lint": "eslint \"./**/*.{js,jsx}\""
@@ -22,7 +22,8 @@
   },
   "devDependencies": {
     "eslint": "^8.16.0",
-    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "jest": "^28.1.1",
     "nodemon": "^2.0.16"
   }
 }

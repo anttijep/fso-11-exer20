@@ -4,9 +4,8 @@ module.exports = {
     commonjs: true,
     es6: true,
     browser: true,
-    "jest/globals": true,
   },
-  extends: ["eslint:recommended"],
+  extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -14,7 +13,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["jest"],
+  plugins: ["react"],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
