@@ -18,8 +18,6 @@ jobs:
           node-version: 16
       - name: backend install
         run: npm install
-      - name: frontend install
-        run: cd puhelinluettelo_frontend && install
       - name: build
         run: npm run build
       - name: test
