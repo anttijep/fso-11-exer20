@@ -7,7 +7,7 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf build && cd puhelinluettelo_frontend/ && npm run build && cp -r build ../",
+    "build": "rm -rf build && cd puhelinluettelo_frontend/ && npm install && npm run build && cp -r build ../",
     "deploy": "npm run build && npm start",
     "lint": "npx eslint src"
   },
