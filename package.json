@@ -1,0 +1,27 @@
+{
+  "name": "puhelinluettelo_backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build && cd ../puhelinluettelo_frontend/ && npm run build && cp -r build ../puhelinluettelo_backend/",
+    "deploy": "npm run build && npm start",
+    "lint": "npx eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "nodemon": "^2.0.16"
+  }
+}
