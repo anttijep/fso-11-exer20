@@ -19,13 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server -p3001 --watch db.json",
-    "lint": "npx eslint src"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "lint": "eslint \"./**/*.{js,jsx}\""
   },
   "proxy": "http://localhost:3001",
   "browserslist": {
